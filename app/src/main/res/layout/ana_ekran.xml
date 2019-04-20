@@ -91,6 +91,22 @@
         android:textSize="@android:dimen/notification_large_icon_width"
         android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/odenen_faiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aylik_odeme"
+        android:layout_marginTop="74dp"
+        android:layout_alignLeft="@id/aylik_odeme"
+        android:text="@string/odenen_faiz"/>
+
+    <TextView
+        android:id="@+id/odenen_faiz_output"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/odenen_faiz"
+        android:layout_alignParentRight="true"/>
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

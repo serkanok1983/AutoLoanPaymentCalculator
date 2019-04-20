@@ -13,6 +13,7 @@ public class AnaEkran extends AppCompatActivity {
     double faizOrani;
     int vade;
     TextView aylikOdemeOutput;
+    TextView odenenFaizOutput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class AnaEkran extends AppCompatActivity {
         EditText faizOraniGirdi = findViewById(R.id.faiz_orani_input);
         EditText vadeGirdi = findViewById(R.id.vade_input);
         aylikOdemeOutput = findViewById(R.id.aylik_odeme_output);
+        odenenFaizOutput = findViewById(R.id.odenen_faiz_output);
         krediTutariGirdi.addTextChangedListener(krediTutariGirdiIzleyici);
         faizOraniGirdi.addTextChangedListener(faizOraniGirdiIzleyici);
         vadeGirdi.addTextChangedListener(vadeGirdiIzleyici);
@@ -34,6 +36,7 @@ public class AnaEkran extends AppCompatActivity {
     private void sonucGoster() {
         double a = Math.pow((1 + faizOrani), vade);
         aylikOdemeOutput.setText(String.format("%.1f", (krediTutari * (faizOrani * a) / (a - 1))));
+        odenenFaizOutput.setText(String.format("%.1f", (((krediTutari * (faizOrani * a) / (a - 1)) * vade) - krediTutari)));
     }
 
     private TextWatcher krediTutariGirdiIzleyici = new TextWatcher() {

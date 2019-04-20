@@ -4,4 +4,5 @@
     <string name="faiz_orani">Faiz Oranı</string>
     <string name="vade">Vade (Ay)</string>
     <string name="aylik_odeme">Aylık Ödeme</string>
+    <string name="odenen_faiz">Ödenecek Toplam Faiz</string>
 </resources>
