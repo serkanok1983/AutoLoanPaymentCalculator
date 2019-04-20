@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaPlan"
+    tools:context="com.serkanok.autoloanpaymentcalculator.AnaEkran">
+
+    <TextView
+        android:id="@+id/baslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/kredi_tutari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/baslik"
+        android:layout_below="@+id/baslik"
+        android:layout_marginTop="54dp"
+        android:text="@string/kredi_tutar" />
+
+    <TextView
+        android:id="@+id/faiz_orani"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/kredi_tutari"
+        android:layout_below="@+id/kredi_tutari"
+        android:layout_marginTop="24dp"
+        android:text="@string/faiz_orani" />
+
+    <TextView
+        android:id="@+id/vade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/faiz_orani"
+        android:layout_below="@id/faiz_orani"
+        android:layout_marginTop="24dp"
+        android:text="@string/vade" />
+
+    <TextView
+        android:id="@+id/aylik_odeme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/vade"
+        android:layout_below="@id/vade"
+        android:layout_marginTop="64dp"
+        android:text="@string/aylik_odeme" />
+
+    <EditText
+        android:id="@+id/kredi_tutari_input"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/kredi_tutari"
+        android:layout_alignBottom="@id/kredi_tutari"
+        android:layout_alignParentRight="true"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/faiz_orani_input"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/faiz_orani"
+        android:layout_alignBottom="@id/faiz_orani"
+        android:layout_alignParentRight="true"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/vade_input"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/vade"
+        android:layout_alignBottom="@id/vade"
+        android:layout_alignParentRight="true"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/aylik_odeme_output"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/vade_input"
+        android:layout_marginTop="24dp"
+        android:textColor="@android:color/white"
+        android:textSize="@android:dimen/notification_large_icon_width"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/icon" />
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Oto Kredi Hesaplama</string>
+    <string name="kredi_tutar">Kredi Tutarı</string>
+    <string name="faiz_orani">Faiz Oranı</string>
+    <string name="vade">Vade (Ay)</string>
+    <string name="aylik_odeme">Aylık Ödeme</string>
+</resources>
